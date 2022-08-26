@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UnityGameFramework>
+  <ResourceCollection>
+    <Resources>
+      <Resource Name="GameMain/Configs" LoadType="1" Packed="True" ResourceGroups="Base" />
+      <Resource Name="GameMain/DataTables" LoadType="1" Packed="True" ResourceGroups="Base" />
+      <Resource Name="GameMain/Music" LoadType="1" Packed="True" ResourceGroups="Base" />
+      <Resource Name="GameMain/UI" LoadType="1" Packed="True" />
+      <Resource Name="Scenes" LoadType="1" Packed="True" ResourceGroups="Base" />
+    </Resources>
+    <Assets>
+      <Asset Guid="06cf6896352704a9cb7a5391147c1af8" ResourceName="GameMain/UI" />
+      <Asset Guid="09c44d20540f649d5b42ba83455b073a" ResourceName="GameMain/DataTables" />
+      <Asset Guid="285013738dcb54cb998f9ebabf95444d" ResourceName="Scenes" />
+      <Asset Guid="3af4828b692414511b32fddf65de0a07" ResourceName="Scenes" />
+      <Asset Guid="3c426dec421394d878702c8e75dcd3d8" ResourceName="GameMain/DataTables" />
+      <Asset Guid="45b4ba250e09841bf8f12b2685aeb3a5" ResourceName="GameMain/DataTables" />
+      <Asset Guid="46780125ced944f57aec8b70dd9538b0" ResourceName="GameMain/Music" />
+      <Asset Guid="48c23ba83b7ba4e1ba038dfb336b170d" ResourceName="GameMain/Music" />
+      <Asset Guid="4fb3560fdcaa6492b8f4cddea961cc9f" ResourceName="GameMain/DataTables" />
+      <Asset Guid="56164727eb12a4eb8bd344e6b4f6da3f" ResourceName="GameMain/Configs" />
+      <Asset Guid="686d32b1778cc418db932e0cc5e30247" ResourceName="GameMain/Configs" />
+      <Asset Guid="6d22ddba36ff84677a64beeb4857020f" ResourceName="GameMain/UI" />
+      <Asset Guid="72e4df2db9fe340b8adb83c2ddc05323" ResourceName="GameMain/DataTables" />
+      <Asset Guid="76c664e727e1f48358ee9c421849e1ab" ResourceName="GameMain/DataTables" />
+      <Asset Guid="7ad52910feabd4f9fb779ff4f896daf1" ResourceName="GameMain/Configs" />
+      <Asset Guid="96efd63bc1bdf4f20b14d58ed1224353" ResourceName="GameMain/DataTables" />
+      <Asset Guid="9fc0d4010bbf28b4594072e72b8655ab" ResourceName="Scenes" />
+      <Asset Guid="af7735f3ed9c249abb37383b8a520cb8" ResourceName="GameMain/UI" />
+      <Asset Guid="b48c91af80c5b4977bc9bce3ad9726cf" ResourceName="GameMain/Music" />
+      <Asset Guid="b98b90057bb9b4206af54ade20dcaf87" ResourceName="GameMain/Configs" />
+      <Asset Guid="bbfdbf8ffa9cd4f30ad94e56856a8408" ResourceName="GameMain/UI" />
+      <Asset Guid="be4fb74d95dd14a95a51c0abd5f2cebb" ResourceName="GameMain/Configs" />
+      <Asset Guid="bfe307c3ea97141358035973fe9f4930" ResourceName="Scenes" />
+      <Asset Guid="dd4311f0b7cad421085abc3a75d29908" ResourceName="GameMain/Configs" />
+      <Asset Guid="eaa8ec6c5a4b8463695416e9010d2105" ResourceName="GameMain/UI" />
+      <Asset Guid="f153911b6ea5b4e62b28b21618f8ec47" ResourceName="GameMain/DataTables" />
+      <Asset Guid="fc12ef116a11643ecaba17151f0cde23" ResourceName="GameMain/Configs" />
+      <Asset Guid="ff3d23088b4e041588b3e3f522149419" ResourceName="GameMain/DataTables" />
+    </Assets>
+  </ResourceCollection>
+</UnityGameFramework>

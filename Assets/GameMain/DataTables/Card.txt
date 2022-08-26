@@ -1,0 +1,17 @@
+#	卡牌配置表															
+#	Id		Name	Priority	Range	Damage	Description	Cost	Type	Amount	Icon	Effect	BuffType	Round	BuffValue	Tag
+#	int		String	int	int	int	String	int	int	int	String	int	int[]	int	int[]	int
+#	编号	策划备注	特性名字	优先级	攻击范围	攻击伤害	描述	花费	"卡牌类型,1单体敌人2直接使用"	使用次数	图片	特效	buff	buff持续回合	buff数值	牌分类，1:攻击2：恢复3：闪电4:减益5：防御
+	10001	拳头	Punch	3	1	1	Damage infliction is prioritize	0	1	99	Punch	10001	0	0	0	1
+	10002	刀	Slash	3	1	2	Damage infliction is prioritize	0	1	99	Slash	10002	0	0	0	1
+	10003	步枪	Rifle	3	3	4	Damage infliction is prioritize	0	1	99	Rifle	10003	0	0	0	1
+	10004	左轮	Revolver	3	2	2	Damage infliction is prioritize	0	1	99	Revolver	10004	0	0	0	1
+	10005	闪避	Dodge	2	0	0	Damage infliction is prioritize	500	2	1	Dodge	10005	103	3	50	5
+	10006	格挡	BlockAttack	2	0	0	Damage infliction is prioritize	500	2	1	BlockAttack	10006	102	3	1	5
+	10007	陷阱	Trap	4	2	2	Damage infliction is prioritize	250	3	1	Trap	10007	0	0	0	4
+	10008	检测陷阱	Spiritual	2	0	0	Damage infliction is prioritize	500	2	1	Spiritual	10008	108	3	2	2
+	10009	移动增加	Agility	2	0	0	Damage infliction is prioritize	1000	2	1	Agility	10009	105	3	1	2
+	10010	视野增加	Ghost	2	0	0	Damage infliction is prioritize	1000	2	1	Ghost	10010	112	3	1	2
+	10011	加血	Medikit	2	0	0	Damage infliction is prioritize	500	2	1	Medikit	10011	107	1	2	2
+	10012	直接结算攻击	Lightning	0	0	0	Damage infliction is prioritize	0	2	1	Lightning	10012	0	0	0	3
+	10013	撤退	Withdrawal	1	0	0	Withdrawal current match after 4 turns	0	2	1	Withdrawal	10013	119	4	0	3
