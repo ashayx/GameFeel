@@ -60373,6 +60373,7 @@ GameObject:
   - component: {fileID: 1931542710184927870}
   - component: {fileID: 1931542710184927868}
   - component: {fileID: 1931542710184927869}
+  - component: {fileID: 4272372247895931473}
   m_Layer: 0
   m_Name: DeathFeedbacks
   m_TagString: Untagged
@@ -60408,6 +60409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Feedbacks:
   - {fileID: 1931542710184927869}
+  - {fileID: 4272372247895931473}
   InitializationMode: 2
   SafeMode: 3
   Direction: 0
@@ -60474,6 +60476,44 @@ MonoBehaviour:
   SoundFX: {fileID: 8300000, guid: 876e376837805f44bbe2a5309dc0f789, type: 3}
   Loop: 0
   Pitch: 1
+--- !u!114 &4272372247895931473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931542710184927871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f3e1ec70856fe5439234683b34b4737, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Active: 1
+  Label: Timescale Modifier
+  Chance: 100
+  Timing:
+    TimescaleMode: 0
+    InitialDelay: 0
+    CooldownDuration: 0
+    NumberOfRepeats: 0
+    RepeatForever: 0
+    DelayBetweenRepeats: 1
+    MMFeedbacksDirectionCondition: 0
+    PlayDirection: 0
+    ConstantIntensity: 0
+    UseIntensityInterval: 0
+    IntensityIntervalMin: 0
+    IntensityIntervalMax: 0
+    Sequence: {fileID: 0}
+    TrackID: 0
+    Quantized: 0
+    TargetBPM: 120
+  DebugActive: 0
+  Mode: 0
+  TimeScale: 0.5
+  TimeScaleDuration: 1
+  TimeScaleLerp: 0
+  TimeScaleLerpSpeed: 1
 --- !u!1 &1931542710280854963
 GameObject:
   m_ObjectHideFlags: 0
@@ -65842,8 +65882,8 @@ MonoBehaviour:
   MinimumInputThreshold: 0.1
   FlipCharacterIfNeeded: 1
   AutoCorrectTrajectory: 1
-  DashCooldown: 0.3
-  LimitedDashes: 0
+  DashCooldown: 0.5
+  LimitedDashes: 1
   SuccessiveDashAmount: 1
   SuccessiveDashesLeft: 1
   SuccessiveDashResetMethod: 0
@@ -66001,21 +66041,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2683540593697595691}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9716d97790a0a49889284ee813194576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentHealth: 0
   TemporaryInvulnerable: 0
-  InitialHealth: 10
-  MaximumHealth: 10
+  InitialHealth: 50
+  MaximumHealth: 50
   Invulnerable: 0
-  DamageFeedbacks: {fileID: 0}
+  DamageFeedbacks: {fileID: 1931542709158959804}
   FlickerSpriteOnHit: 1
   FlickerColor: {r: 1, g: 0.078431375, b: 0.078431375, a: 1}
   ImmuneToKnockback: 0
-  DeathFeedbacks: {fileID: 0}
+  DeathFeedbacks: {fileID: 1931542710184927868}
   DestroyOnDeath: 1
   DelayBeforeDestruction: 0
   CollisionsOffOnDeath: 1
@@ -66024,8 +66064,8 @@ MonoBehaviour:
   VibrateOnDeath: 0
   RespawnAtInitialLocation: 0
   ApplyDeathForce: 1
-  DeathForce: {x: 0, y: 10}
-  ResetForcesOnDeath: 0
+  DeathForce: {x: 5, y: 3}
+  ResetForcesOnDeath: 1
 --- !u!114 &1669085854495833561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66211,12 +66251,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddafa5fb4e3e8fb4aa97a7ea8e8b72d6, type: 3}
---- !u!4 &497303176193044344 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4497262683522610, guid: ddafa5fb4e3e8fb4aa97a7ea8e8b72d6,
-    type: 3}
-  m_PrefabInstance: {fileID: 497995917633153354}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &556416300167956614 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 95126495896396236, guid: ddafa5fb4e3e8fb4aa97a7ea8e8b72d6,
@@ -66226,6 +66260,12 @@ Animator:
 --- !u!4 &502606568253156798 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4682428117386484, guid: ddafa5fb4e3e8fb4aa97a7ea8e8b72d6,
+    type: 3}
+  m_PrefabInstance: {fileID: 497995917633153354}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &497303176193044344 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4497262683522610, guid: ddafa5fb4e3e8fb4aa97a7ea8e8b72d6,
     type: 3}
   m_PrefabInstance: {fileID: 497995917633153354}
   m_PrefabAsset: {fileID: 0}

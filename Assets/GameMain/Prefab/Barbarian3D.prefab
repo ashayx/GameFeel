@@ -5344,7 +5344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Active: 1
   Label: Particles Instantiation
-  Chance: 100
+  Chance: 50
   Timing:
     TimescaleMode: 0
     InitialDelay: 0

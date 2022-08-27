@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using MoreMountains.Tools;
+using MoreMountains.CorgiEngine;
 public class CreateEnemy : MonoBehaviour
 {
 
@@ -22,11 +23,17 @@ public class CreateEnemy : MonoBehaviour
 
     private IEnumerator Create()
     {
-        for (int i = 0; i < 20; i++)
+        while (true)
         {
             yield return new WaitForSeconds(time);
             var obj = mMSimpleObjectPooler.GetPooledGameObject();
-            obj.SetActive(true);
+            if (obj != null)
+            {
+                obj.SetActive(true);
+                obj.GetComponent<Health>()?.Revive();
+            }
+
         }
+
     }
 }
