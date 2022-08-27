@@ -5262,7 +5262,7 @@ GameObject:
   - component: {fileID: 5310539136688223728}
   - component: {fileID: 452610678011597180}
   m_Layer: 0
-  m_Name: Gun
+  m_Name: FastGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5436,7 +5436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MutualizeWaitingPools: 1
   NestWaitingPool: 1
-  GameObjectToPool: {fileID: 100002, guid: 5ebb9c5dcdd05a6469edd73406506b37, type: 3}
+  GameObjectToPool: {fileID: 100002, guid: 5670bb44d9a7a4a40a82591429e66ab4, type: 3}
   PoolSize: 20
   PoolCanExpand: 1
 --- !u!1 &6878307118091281738

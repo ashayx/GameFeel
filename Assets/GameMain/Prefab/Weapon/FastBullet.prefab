@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 114000012788668036}
   - component: {fileID: 114000010281602892}
   m_Layer: 16
-  m_Name: Bullet
+  m_Name: FastBullet
   m_TagString: Untagged
   m_Icon: {fileID: 1177953632, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TargetLayerMask:
     serializedVersion: 2
-    m_Bits: 271104
+    m_Bits: 270592
   DamageCaused: 10
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 0
