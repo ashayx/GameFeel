@@ -6,16 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GameMain.unity
+    path: Assets/GameMain/Scenes/GameMain.unity
     guid: 285013738dcb54cb998f9ebabf95444d
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
+    path: Assets/GameMain/Scenes/GameScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/HomeScene.unity
+    path: Assets/GameMain/Scenes/HomeScene.unity
     guid: bfe307c3ea97141358035973fe9f4930
   - enabled: 1
-    path: Assets/Scenes/LoadingScene.unity
+    path: Assets/GameMain/Scenes/LoadingScene.unity
     guid: 3af4828b692414511b32fddf65de0a07
   - enabled: 1
     path: Assets/CorgiEngine/Common/Scenes/SplashScreen.unity
@@ -288,7 +288,7 @@ EditorBuildSettings:
     path: Assets/CorgiEngine/ThirdParty/MoreMountains/MMTools/Tools/MMTween/Demo/MMTweenPlotter.unity
     guid: 96905a8529e11244cbe0a6f74ab95ddd
   - enabled: 1
-    path: Assets/GUI PRO Kit - Fantasy RPG/Scenes/DemoScene_(v2.0).unity
+    path: Assets/Effect/GUI PRO Kit - Fantasy RPG/Scenes/DemoScene_(v2.0).unity
     guid: 8fe2d91c983bc44c488025fa4c5cdc57
   - enabled: 1
     path: Assets/Model/PLATFORMER - Simple_Cube_World_Vol_1/Scenes/Demo_01.unity

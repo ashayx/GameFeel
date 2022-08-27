@@ -253,8 +253,6 @@ namespace MoreMountains.CorgiEngine
         public virtual void Damage(int damage, GameObject instigator, float flickerDuration,
             float invincibilityDuration, Vector3 damageDirection)
         {
-            Debug.Log("Damage");
-
             if (damage <= 0)
             {
                 OnHitZero?.Invoke();
@@ -363,7 +361,6 @@ namespace MoreMountains.CorgiEngine
 
             if (_animator != null)
             {
-                Debug.Log("kill");
                 _animator.SetTrigger("Death");
             }
 
