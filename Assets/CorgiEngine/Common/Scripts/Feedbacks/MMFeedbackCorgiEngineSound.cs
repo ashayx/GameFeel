@@ -21,7 +21,8 @@ namespace MoreMountains.CorgiEngine
         /// whether or not to play this sound in a loop
         [Tooltip("whether or not to play this sound in a loop")]
         public bool Loop = false;
-        
+        public float Pitch = 1;
+
         protected AudioSource _audioSource;
 
         protected override void CustomPlayFeedback(Vector3 position, float attenuation = 1.0f)
@@ -30,7 +31,7 @@ namespace MoreMountains.CorgiEngine
             {
                 if (SoundFX != null)
                 {
-                    _audioSource = MMSoundManagerSoundPlayEvent.Trigger(SoundFX, MMSoundManager.MMSoundManagerTracks.Sfx, this.transform.position, loop:Loop);
+                    _audioSource = MMSoundManagerSoundPlayEvent.Trigger(SoundFX, MMSoundManager.MMSoundManagerTracks.Sfx, this.transform.position, loop:Loop, pitch: Pitch);
                 }
             }
         }

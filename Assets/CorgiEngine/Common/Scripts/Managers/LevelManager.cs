@@ -586,6 +586,9 @@ namespace MoreMountains.CorgiEngine
 	            case MMLoadScene.LoadingSceneModes.MMAdditiveSceneLoadingManager:
 		            MMAdditiveSceneLoadingManager.LoadScene(levelName, AdditiveLoadingSettings);
 		            break;
+                case MMLoadScene.LoadingSceneModes.GFLoadingManager:
+                    GFLoadingManager.LoadScene(levelName);
+                    break;
             }
 		}
 

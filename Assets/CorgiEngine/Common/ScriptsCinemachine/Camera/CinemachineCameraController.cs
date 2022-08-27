@@ -4,7 +4,7 @@ using MoreMountains.Tools;
 using Cinemachine;
 
 namespace MoreMountains.CorgiEngine
-{  
+{
 
     /// <summary>
     /// A class that handles camera follow for Cinemachine powered cameras
@@ -93,7 +93,7 @@ namespace MoreMountains.CorgiEngine
         [Tooltip("if this is true, the camera will teleport to the player's location on respawn, otherwise it'll move there at its regular speed")]
         public bool InstantRepositionCameraOnRespawn = false;
 
-        [Header("Debug")] 
+        [Header("Debug")]
         [MMInspectorButton("StartFollowing")]
         public bool StartFollowingBtn;
         [MMInspectorButton("StopFollowing")]
@@ -123,12 +123,12 @@ namespace MoreMountains.CorgiEngine
         protected virtual void Start()
         {
             InitializeConfiner();
-            
+
             if (UseOrthographicZoom)
             {
                 _virtualCamera.m_Lens.OrthographicSize = InitialOrthographicZoom;
             }
-            
+
             if (UsePerspectiveZoom)
             {
                 SetPerspectiveZoom(InitialPerspectiveZoom);
@@ -141,11 +141,11 @@ namespace MoreMountains.CorgiEngine
             {
                 if (_confiner.m_ConfineMode == CinemachineConfiner.Mode.Confine2D)
                 {
-                    _confiner.m_BoundingShape2D = LevelManager.Instance.BoundsCollider2D;    
+                    _confiner.m_BoundingShape2D = LevelManager.Instance.BoundsCollider2D;
                 }
                 else
                 {
-                    _confiner.m_BoundingVolume = LevelManager.Instance.BoundsCollider;    
+                    _confiner.m_BoundingVolume = LevelManager.Instance.BoundsCollider;
                 }
             }
         }
@@ -182,12 +182,17 @@ namespace MoreMountains.CorgiEngine
             _virtualCamera.enabled = false;
         }
 
+        public float RightScreenX = 0.25f;
+        public float LeftScreenX = 0.8f;
+
         /// <summary>
         /// On late update, we handle our zoom level
         /// </summary>
         protected virtual void LateUpdate()
         {
             HandleZoom();
+            var to = TargetCharacter.IsFacingRight ? RightScreenX : LeftScreenX;
+            _framingTransposer.m_ScreenX = Mathf.Lerp(_framingTransposer.m_ScreenX, to, Time.unscaledTime);
         }
 
         /// <summary>
@@ -276,9 +281,9 @@ namespace MoreMountains.CorgiEngine
                         }
                         else
                         {
-                            _confiner.m_BoundingVolume = cameraEvent.Bounds;    
+                            _confiner.m_BoundingVolume = cameraEvent.Bounds;
                         }
-                        
+
                     }
                     break;
                 case MMCameraEventTypes.StartFollowing:

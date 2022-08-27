@@ -14,7 +14,7 @@ namespace MoreMountains.Tools
 	public class MMLoadScene : MonoBehaviour 
 	{
 		/// the possible modes to load scenes. Either Unity's native API, or MoreMountains' LoadingSceneManager
-		public enum LoadingSceneModes { UnityNative, MMSceneLoadingManager, MMAdditiveSceneLoadingManager }
+		public enum LoadingSceneModes { UnityNative, MMSceneLoadingManager, MMAdditiveSceneLoadingManager, GFLoadingManager }
 
 		/// the name of the scene that needs to be loaded when LoadScene gets called
 		[Tooltip("the name of the scene that needs to be loaded when LoadScene gets called")]
