@@ -10229,6 +10229,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 402206629965656434, guid: 637456f149a5d4b19b43d8bff6fe5aa9,
+        type: 3}
+      propertyPath: HideMobileControlsInEditor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 402206629971487100, guid: 637456f149a5d4b19b43d8bff6fe5aa9,
         type: 3}
       propertyPath: m_RootOrder
@@ -18711,7 +18716,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3094320025028046589}
   m_LocalRotation: {x: 0.04196279, y: -0, z: -0, w: 0.9991192}
-  m_LocalPosition: {x: 85.61653, y: 10.162104, z: 3.7756212}
+  m_LocalPosition: {x: 85.61816, y: 10.162104, z: 3.7758777}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6700620418113220538}
